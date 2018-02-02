@@ -1,4 +1,4 @@
-package com.example.soumit.mitchadv;
+package com.example.soumit.mitchadv.Fragment;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

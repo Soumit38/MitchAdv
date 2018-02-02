@@ -1,4 +1,4 @@
-package com.example.soumit.mitchadv;
+package com.example.soumit.mitchadv.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,11 +11,13 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.soumit.mitchadv.R;
+
 /**
  * Created by Soumit on 2/2/2018.
  */
 
-public class Fragment2 extends Fragment {
+public class Fragment1 extends Fragment {
 
     private static final String TAG = "Fragment1";
 
@@ -27,7 +29,7 @@ public class Fragment2 extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment2_layout, container, false);
+        View view = inflater.inflate(R.layout.fragment1_layout, container, false);
 
         btnNaveFrag1 = (Button) view.findViewById(R.id.btnNavFrag1);
         btnNaveFrag2 = (Button) view.findViewById(R.id.btnNavFrag2);
@@ -41,6 +43,7 @@ public class Fragment2 extends Fragment {
                 Toast.makeText(getActivity(), "Going to fragment 1", Toast.LENGTH_SHORT).show();
                 //navigate to the fragment
                 ((MainActivity)getActivity()).setViewPager(0);
+
             }
         });
 
@@ -51,7 +54,6 @@ public class Fragment2 extends Fragment {
                 Toast.makeText(getActivity(), "Going to fragment2", Toast.LENGTH_SHORT).show();
                 //navigate to the fragment
                 ((MainActivity)getActivity()).setViewPager(1);
-
             }
         });
 
@@ -62,7 +64,6 @@ public class Fragment2 extends Fragment {
                 Toast.makeText(getActivity(), "Going to fragment 3", Toast.LENGTH_SHORT).show();
                 //navigate to the fragment
                 ((MainActivity)getActivity()).setViewPager(2);
-
             }
         });
 
